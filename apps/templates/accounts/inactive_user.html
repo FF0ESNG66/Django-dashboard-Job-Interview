@@ -1,0 +1,42 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Inactive user {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-md-5">
+        <div class="card">
+            <div class="card-header card-header-primary text-center">
+                <h4 class="card-title">
+                    Email confirmation
+                </h4>
+            </div>
+            <div class="card-body text-center">
+
+                <h6 class="card-category">
+                    We've sent you an email in order to activate your account.
+                </h6>
+
+                <h6 class="card-category mt-4 mb-0">
+                    Please check your inbox, and if you don't see the email, also check your spam folder.
+                </h6>
+
+                <h6 class="card-category mt-4 mb-0">
+                    If you encounter any issues, <a href="#">contact</a> our support team. 
+                </h6>
+
+                <a href="{% url 'authentication:login' %}" class="btn btn-primary mt-4">
+                    Log in
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}
