@@ -42,3 +42,9 @@ Multiple HTML templates were added in order to show the new pages created, these
 
 The last six templated related to password recovery system were added to a subdirectory named `password_folder` inside of `accounts` directory in order to maintain an order.
 All these files follow the same design line of the entire webpage to no make a disruptive user experience
+
+
+## Conclusions
+
+Given the constraints of time, I've taken a more pragmatic approach to enhance this login system. A more robust solution would involve leveraging `Django All-Auth` since this library provides a robust security system and features in order to provide a better user experience and also developer experience since most of the features are done out of the box.
+However, due to current time constraints and a need for in-depth knowledge in `Django All-Auth` I decided to drop its integration into this project.
